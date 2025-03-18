@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Daily Mood Tracker</h1>
+    <div class="mood-container">
+      <div class="mood" onclick="logMood('😊')">😊</div>
+      <div class="mood" onclick="logMood('😢')">😢</div>
+      <div class="mood" onclick="logMood('😐')">😐</div>
+      <div class="mood" onclick="logMood('😄')">😄</div>
+      <div class="mood" onclick="logMood('😡')">😡</div>
+    </div>
+
+    <h2>Select View:</h2>
+    <select id="viewSelector">
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly" selected>Monthly</option>
+    </select>
+
+    <h2>Past Moods</h2>
+    <div id="timeline"></div>
+    <h2>Monthly Calendar</h2>
+    <div class="calendar-container">
+      <div id="calendar" class="calendar"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
